@@ -1,0 +1,30 @@
+.orderDetails{
+  margin: 30px 100px;
+  border: 1px solid rgb(218, 218, 218);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  text-align: left;
+  padding: 20px;
+}
+.inUL > li{
+  border: 1px solid lightgray;
+  padding: 7px;
+  text-decoration: none;
+  display: inline;
+  margin-left: 10px;
+}
+.inUL{
+  text-decoration: none;
+  display: inline;
+  
+}
+
+.inDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.inDiv > p{
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgba(223, 34, 34, 0.932);
+}

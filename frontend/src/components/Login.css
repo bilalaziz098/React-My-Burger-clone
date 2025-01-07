@@ -1,0 +1,37 @@
+.authDiv{
+  border: 1px solid lightgray;
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.formDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.formBtn{
+  color: black;
+  background-color:transparent;
+  border: none;
+  width: auto;
+  margin: auto;
+  cursor: pointer;
+
+}
+input{
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+.secondBtn{
+  color: black;
+  background-color:transparent;
+  border: none;
+  width: auto;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 20px;
+}

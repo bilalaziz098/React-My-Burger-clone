@@ -1,0 +1,8 @@
+.orderDiv{
+  height: 350px;
+  background-color: #cf8f2e;
+}
+span > button{
+  padding: 7px 15px; 
+  cursor: pointer;
+}

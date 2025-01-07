@@ -1,0 +1,117 @@
+.burger{
+  margin-top: 50px;
+  height: 500px;
+  align-items: center;
+}
+.botBurger{
+  width: 40%;
+  background-color: #e98540;
+  height: 80px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: inset -10px -1px #c15711;
+  margin: auto;
+  margin-top: 10px;
+}
+.start{
+  margin: 30px 0px;
+}
+.topBurger{
+  width: 40%;
+  background: linear-gradient(#bc581e, #e27b36);
+  height: 110px;
+  border-radius: 50% 50% 0 0;
+  box-shadow: inset -10px 1px #c15711;
+  margin: auto;
+  margin-bottom: 10px;
+}
+body{
+  font-size: 17px;
+}
+
+.orderDiv{
+  padding-top: 10px;
+  height: 350px;
+  background-color: #cf8f2e;
+}
+span > button{
+  padding: 7px 17px; 
+  cursor: pointer;
+
+}
+
+.btn{
+  margin: 0px 10px;
+  color: white;
+  border: 1px solid #aa6817;
+}
+
+.btnDiv{
+  margin: auto;
+  width: 20%;
+}
+.btnDiv > div{
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnDiv > p> span{
+  align-items: center;
+  
+}
+.more{
+  background-color: #8f5e1e;
+  border: 1px solid #aa6817;
+  color: white;
+}
+
+
+
+
+
+.itemsDiv{
+  margin-top: 50px;
+  height: 500px;
+  align-items: center;
+}
+.salad{
+  width: 43%;
+  background: linear-gradient(#228c1d, #91ce50);
+  height: 40px;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.bacon{
+  width: 40%;
+  background-color: #c24f2a;
+  height: 20px;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.cheese{
+  width: 45%;
+  background-color: #e4c513;
+  height: 22px;
+  margin: auto;
+  border-radius: 50px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.meat{
+  width: 40%;
+  background-color: #753106;
+  height: 45px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.burgerOverflow{
+  overflow-y: scroll;
+}
