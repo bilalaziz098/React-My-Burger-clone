@@ -4,7 +4,10 @@ const router = express.Router()
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken'); 
 const {validator, schema} = require('../middlewares/validators');
-
+const dotenv = require('dotenv');
+const { userAuth } = require('../middlewares/auth');
+dotenv.config();
+const SECRET = process.env.JWT_SECRET
 
 router.post('/auth', validator(schema.loginValidate), async (req, res) => {
   const { email, password } = req.body;
@@ -20,8 +23,18 @@ router.post('/auth', validator(schema.loginValidate), async (req, res) => {
       return res.json({ message: 'Invalid credentials' });
     }
 
-    return res.status(200).json({ message: 'Login successful',
-      user: user
+    const token = jwt.sign({ userId: user.id }, SECRET, { expiresIn: '1h' });
+    user.token = token
+
+    res.cookie('token', token, {
+      httpOnly: true,
+      maxAge: 3600000
+    })
+
+    return res.status(200).json({
+      message: 'Login successful',
+      token, 
+      user: { id: user.id, email: user.email },
     });
 
   } catch (error) {
